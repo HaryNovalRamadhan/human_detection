@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Human Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Human Detection Web App</h1>
+    <a href="{% url 'mediapipe' %}" class="button">MediaPipe Detection</a>
+    <a href="{% url 'yolo' %}" class="button">YOLOv5 Detection</a>
+    <a href="{% url 'combined' %}" class="button">Combined Detection</a>
+</body>
+</html>

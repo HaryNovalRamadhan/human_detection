@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv5 Human Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOLOv5 Human Detection</h1>
+    <img src="{% url 'video_feed_yolo' %}">
+    <br>
+    <a href="{% url 'index' %}" class="button">Back to Home</a>
+</body>
+</html>

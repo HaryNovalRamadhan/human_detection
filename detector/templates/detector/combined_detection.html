@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .video-container {
+            margin: 20px auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combined MediaPipe and YOLO Detection</h1>
+    <div class="video-container">
+        <img src="{% url 'video_feed_combined' %}" width="640" height="480">
+    </div>
+    <a href="{% url 'index' %}" class="button">Back to Home</a>
+</body>
+</html>
