@@ -76,8 +76,8 @@ def gen_yolo(camera):
     global model
     if model is None:
         print("Loading YOLO model")
-        import torch
-        model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+        import yolov5
+        model = yolov5.load('yolov5s.pt')
     
     print("Starting YOLO stream")
     while True:
@@ -103,8 +103,8 @@ def gen_combined(camera):
     global model
     if model is None:
         print("Loading YOLO model")
-        import torch
-        model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+        import yolov5
+        model = yolov5.load('yolov5s.pt')
     
     print("Starting combined stream")
     while True:
